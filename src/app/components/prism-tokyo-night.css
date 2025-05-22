@@ -1,0 +1,141 @@
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #c0caf5;
+  background: none;
+  font-family: 'JetBrains Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+  tab-size: 4;
+  hyphens: none;
+  font-size: 0.8rem;
+}
+
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0;
+  overflow: auto;
+  background: #1a1b26;
+}
+
+/* Tokyo Night theme */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #565f89;
+  font-style: italic;
+}
+
+.token.function {
+  color: #7aa2f7;
+}
+
+.token.keyword {
+  color: #bb9af7;
+}
+
+.token.string {
+  color: #9ece6a;
+}
+
+.token.number {
+  color: #ff9e64;
+}
+
+.token.operator {
+  color: #89ddff;
+}
+
+.token.punctuation {
+  color: #c0caf5;
+}
+
+.token.property,
+.token.parameter {
+  color: #73daca;
+}
+
+.token.boolean,
+.token.constant {
+  color: #ff9e64;
+}
+
+/* Scrollbar styling */
+pre[class*="language-"]::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: #1a1b26;
+}
+
+pre[class*="language-"]::-webkit-scrollbar-thumb {
+  background-color: #414868;
+  border: 3px solid #1a1b26;
+  border-radius: 6px;
+}
+
+pre[class*="language-"]::-webkit-scrollbar-thumb:hover {
+  background-color: #545c7e;
+}
+
+pre[class*="language-"]::-webkit-scrollbar-corner {
+  background-color: #1a1b26;
+}
+
+/* Firefox */
+pre[class*="language-"] {
+  scrollbar-width: thin;
+  scrollbar-color: #414868 #1a1b26;
+}
+
+/* Line Numbers */
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 4.5em !important;
+  padding-right: 1.2em;
+  counter-reset: linenumber;
+  white-space: pre !important;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: 0;
+  width: 3.5em;
+  letter-spacing: -1px;
+  border-right: 1px solid #2f3549;
+  user-select: none;
+  padding: 1.25rem 0;
+  background: #1a1b26;
+}
+
+.line-numbers-rows > span {
+  display: block;
+  counter-increment: linenumber;
+  pointer-events: none;
+  line-height: 1.4;
+  padding: 0 1em 0 0;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #565f89;
+  display: block;
+  text-align: right;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  min-width: 2.5em;
+}
+
+/* Ensure code doesn't wrap */
+code[class*="language-"] {
+  display: block;
+  white-space: pre !important;
+  word-wrap: normal !important;
+  overflow-x: auto;
+} 
